@@ -16,12 +16,16 @@ from sklearn.metrics import (
     confusion_matrix
 )
 
+import os
+os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
+
+
 # ---------------- CONFIG ----------------
 DATASET = "/nlsasfs/home/gpucbh/vyakti7/AI_Project/MRI_TASK1/processed_dataset"
 IMG_SIZE = 224
-NUM_SLICES = 32
+NUM_SLICES = 16
 EPOCHS = 20
-BATCH = 8
+BATCH = 1
 
 # ---------------- MRI LOADER ----------------
 def load_subjects(split):
@@ -71,11 +75,12 @@ print("Test:", X_test.shape)
 # ---------------- MODEL ----------------
 
 # CNN backbone (feature extractor)
-base_cnn = applications.ResNet50(
+base_cnn = applications.DenseNet121(
     weights="imagenet",
     include_top=False,
-    input_shape=(IMG_SIZE, IMG_SIZE, 3)
+    input_shape=(224,224,3)
 )
+
 base_cnn.trainable = False
 
 # Input: (subjects, slices, H, W, C)
