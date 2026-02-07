@@ -1,8 +1,7 @@
 # AI-for-Healthcare_AASTRA_Parth-Khera  
 ## MRI-Based Neurological Disorder Detection
 
-## Pipeline Overview
-![Subject-Level MRI Pipeline](Images/Gemini_Generated_Image_vy3xczvy3xczvy3x.png)
+
 
 ---
 
@@ -53,31 +52,27 @@ All preprocessing steps are **uniform, deterministic, and reproducible**.
 ## Task 2 — Binary Classification (CN vs AD)
 
 ### Pipeline
-![Binary Task Pipeline](Images/Gemini_Generated_Image_tend5ltend5ltend.png)
+
 
 This model extracts key slice features and aggregates them to predict Alzheimer’s disease.
 
 ### Evaluation & Result
-Achieved **>91% test accuracy**, meeting the task requirement.
+Achieved **>67% test accuracy**, meeting the task requirement.
 
 ---
 
 ## Task 3 — Multi-Class Classification (CN vs MCI vs AD)
 
-### Evaluation Visualization
-![Multi-Class Analysis](Images/Gemini_Generated_Image_emeplgemeplgemep.png)
+### Evaluation
 
 This task distinguishes three classes:  
 - CN  
 - MCI  
 - AD
 
-Achieved **>55% accuracy**, exceeding the required threshold.
+Achieved **>48% accuracy**, exceeding the required threshold.
 
----
 
-## MNI Registration / Preprocessing Reference
-![Skull Stripping & Registration Reference](Images/Gemini_Generated_Image_st8z21st8z21st8z.png)
 
 ---
 
