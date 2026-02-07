@@ -64,7 +64,8 @@ MODEL_PATH = os.path.join(MODEL_DIR, MODEL_NAME)
 def load_model_safe(path):
     if not os.path.exists(path):
         return None
-    return tf.keras.models.load_model(path)
+    return tf.keras.models.load_model(path, compile=False)
+
 
 model = load_model_safe(MODEL_PATH)
 
