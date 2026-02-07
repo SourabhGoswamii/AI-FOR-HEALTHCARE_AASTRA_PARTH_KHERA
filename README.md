@@ -1,7 +1,7 @@
 # AI-for-Healthcare_AASTRA_Parth-Khera  
 ## MRI-Based Neurological Disorder Detection
 
-
+![Project Overview](Images/Gemini_Generated_Image_vy3xczvy3xczvy3x.png)
 
 ---
 
@@ -16,11 +16,11 @@ All experiments were executed on a **Linux GPU server accessed via VPN and SSH**
 ## Dataset
 - **MRI:** Brain MRI scans in DICOM (.dcm) format  
 - **Labels:** CSV file containing subject-level diagnoses:
-  - CN – Cognitively Normal  
-  - MCI – Mild Cognitive Impairment  
-  - AD – Alzheimer’s Disease  
+  - **CN** – Cognitively Normal  
+  - **MCI** – Mild Cognitive Impairment  
+  - **AD** – Alzheimer’s Disease  
 
-The CSV file is the **single source of ground truth**.
+The CSV file is treated as the **single source of ground truth**.
 
 ---
 
@@ -29,7 +29,7 @@ The CSV file is the **single source of ground truth**.
 ### Objective
 Ensure **data integrity, standardization, and reproducibility** prior to model training.
 
-### Pipeline
+### Steps
 - Automatic data extraction  
 - Recursive DICOM loading  
 - 3D MRI volume reconstruction  
@@ -47,40 +47,41 @@ Ensure **data integrity, standardization, and reproducibility** prior to model t
 
 All preprocessing steps are **uniform, deterministic, and reproducible**.
 
+![Preprocessing Reference](Images/Gemini_Generated_Image_st8z21st8z21st8z.png)
+
 ---
 
 ## Task 2 — Binary Classification (CN vs AD)
 
-### Pipeline
+This task focuses on distinguishing **Cognitively Normal (CN)** subjects from **Alzheimer’s Disease (AD)** patients using MRI data.
 
-
-This model extracts key slice features and aggregates them to predict Alzheimer’s disease.
-
-### Evaluation & Result
+**Result:**  
 Achieved **>67% test accuracy**, meeting the task requirement.
+
+![Binary Classification](Images/Gemini_Generated_Image_tend5ltend5ltend.png)
 
 ---
 
 ## Task 3 — Multi-Class Classification (CN vs MCI vs AD)
 
-### Evaluation
-
-This task distinguishes three classes:  
+This task extends the system to a **clinically realistic multi-class setting**, distinguishing:
 - CN  
 - MCI  
-- AD
+- AD  
 
+**Result:**  
 Achieved **>48% accuracy**, exceeding the required threshold.
 
-
+![Multi-Class Analysis](Images/Gemini_Generated_Image_emeplgemeplgemep.png)  
+![Multi-Class Evaluation](Images/Gemini_Generated_Image_emeplgemeplgemep%20(1).png)
 
 ---
 
 ## Final Summary
-This project delivers a **compliant, reproducible, and clinically relevant** MRI-based AI system capable of:
+This project delivers a **compliant, reproducible, and clinically relevant MRI-based AI system** capable of:
 
 - Standardized MRI preprocessing  
 - Reliable binary Alzheimer’s disease detection  
-- Meaningful multi-class neurological classification
+- Meaningful multi-class neurological classification  
 
 The pipeline is suitable for **real-world screening and decision-support scenarios**.
