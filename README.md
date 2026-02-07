@@ -1,7 +1,7 @@
 # AI-for-Healthcare_AASTRA_Parth-Khera  
 ## MRI-Based Neurological Disorder Detection
 
-![Project Overview](Images/Gemini_Generated_Image_vy3xczvy3xczvy3x.png)
+![Project Overview](Images/Gemini_Generated_Image_39w31039w31039w3.png)
 
 ---
 
@@ -47,7 +47,7 @@ Ensure **data integrity, standardization, and reproducibility** prior to model t
 
 All preprocessing steps are **uniform, deterministic, and reproducible**.
 
-![Preprocessing Reference](Images/Gemini_Generated_Image_st8z21st8z21st8z.png)
+![Preprocessing Reference](Images/Gemini_Generated_Image_lec7yllec7yllec7.png)
 
 ---
 
@@ -58,7 +58,7 @@ This task focuses on distinguishing **Cognitively Normal (CN)** subjects from **
 **Result:**  
 Achieved **>67% test accuracy**, meeting the task requirement.
 
-![Binary Classification](Images/Gemini_Generated_Image_tend5ltend5ltend.png)
+![Binary Classification](Images/Gemini_Generated_Image_43179o43179o4317.png)
 
 ---
 
@@ -72,8 +72,7 @@ This task extends the system to a **clinically realistic multi-class setting**, 
 **Result:**  
 Achieved **>48% accuracy**, exceeding the required threshold.
 
-![Multi-Class Analysis](Images/Gemini_Generated_Image_emeplgemeplgemep.png)  
-![Multi-Class Evaluation](Images/Gemini_Generated_Image_emeplgemeplgemep%20(1).png)
+![Multi-Class Classification](Images/Gemini_Generated_Image_5zraho5zraho5zra.png)
 
 ---
 
